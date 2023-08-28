@@ -2,8 +2,13 @@ package com.ipl.ipldashboard.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Match {
     
+    @Id
     private long id;
     private String city;
     private LocalDate date;
@@ -18,6 +23,7 @@ public class Match {
     private String result_margin;
     private String umpire1;
     private String umpire2;
+    
     public long getId() {
         return id;
     }
